@@ -68,7 +68,7 @@ namespace Biling_Application1
         {
             string display = "\n";
             display += "S.No \t Product Name \t Model Number \t Warenty Period \t Price \t Quantity \t GST \t Discount \t Total \n\n";
-            display += S_No + "\t   " + Name + "\t    " + Model_No + "\t     " + Warenty_period + "\t\t " + Price + "\t     " + Quantity + "\t\t " + GST + "%\t    " + Discount + "%\t\t\n";
+            display += S_No + "\t   " + Name + "\t    " + Model_No + "\t     " + Warenty_period + "\t\t " + Price + "\t     " + Quantity + "\t\t " + GST + "%\t    " + Discount + "%\t\t";
             return display;
         }
     }
