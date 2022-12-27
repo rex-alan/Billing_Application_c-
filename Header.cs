@@ -24,7 +24,7 @@ namespace Biling_Application1
 
         public override string ToString()
         {
-            return string.Format("Bill No : {0} \t\t\t\t\t\t\t\t\t\t      Date : {1}", this.Bill_No, this.Date);
+            return string.Format("Bill No : {0} \t\t\t\t\t\t\t\t\t\t       Date : {1}", this.Bill_No, this.Date);
         }
     }
 }
