@@ -47,15 +47,24 @@ namespace Biling_Application1
             customer.Shipping_Address = "No 37, Rohini appartments, Tennur, Trichy-620018";
             //Console.WriteLine(customer);
 
-            Bill_Output d = new Bill_Output();
-            d.Bill_disp = header;
-            d.Company_disp = company;
-            d.Service_disp = service;
-            d.Product_disp = product;
-            d.AddProduct(product);
-            d.Customer_disp = customer;
+            //6
+            Calculate_Stats total = new Calculate_Stats();
+            total.AddProduct(product);
 
-            Console.WriteLine(d);
+            //7
+            //Bill_Output d = new Bill_Output();
+            //d.Bill_disp = header;
+            //d.Company_disp = company;
+            //d.Service_disp = service;
+            //d.Product_disp = product;
+            //d.Customer_disp = customer;
+
+            Console.Write(header);
+            Console.WriteLine(company);
+            Console.WriteLine(service);
+            Console.Write(product);
+            Console.WriteLine(total);
+            Console.WriteLine(customer);
         }
     }
 }
