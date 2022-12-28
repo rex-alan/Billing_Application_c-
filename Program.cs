@@ -51,14 +51,6 @@ namespace Biling_Application1
             Calculate_Stats total = new Calculate_Stats();
             total.AddProduct(product);
 
-            //7
-            //Bill_Output d = new Bill_Output();
-            //d.Bill_disp = header;
-            //d.Company_disp = company;
-            //d.Service_disp = service;
-            //d.Product_disp = product;
-            //d.Customer_disp = customer;
-
             Console.Write(header);
             Console.WriteLine(company);
             Console.WriteLine(service);
