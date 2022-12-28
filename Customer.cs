@@ -32,10 +32,10 @@ namespace Biling_Application1
         public override string ToString()
         {
             string display = "";
-            display += "Customer Detials :\n";
+            display += "Customer Detials \n";
             display += "Customer Name : " + this.Name + "\n";
             display += "Billing Address : " + this.Billing_Address + "\n";
-            display += "Shipping Address : " + this.Shipping_Address;
+            display += "Shipping Address : " + this.Shipping_Address + "\n";
             return display;
         }
     }
