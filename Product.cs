@@ -29,11 +29,15 @@ namespace Biling_Application1
             set { _model_No = value; }
         }
 
-        string _warenty_period;
-        public string Warenty_period
+        int _warenty_period;
+        public int Warenty_period
         {
             get { return _warenty_period; }
-            set { _warenty_period = value; }
+            set 
+            {
+                if (value >= 1 && value <= 10) _warenty_period = value;
+                else throw new Exception("Invalid Warenty period");
+            }
         }
 
         float _price;
@@ -54,7 +58,11 @@ namespace Biling_Application1
         public float GST
         {
             get { return _GST; }
-            set { _GST = value; }
+            set
+            {
+                if (value >= 0 && value <= 28) _GST = value;
+                else throw new Exception("Invalid GST");
+            }
         }
 
         float _discount;
@@ -68,7 +76,7 @@ namespace Biling_Application1
         {
             string display = "\n";
             display += "S.No \t Product Name \t Model Number \t Warenty Period \t Price \t Quantity \t GST \t Discount \t Total \n\n";
-            display += S_No + "\t   " + Name + "\t    " + Model_No + "\t     " + Warenty_period + "\t\t " + Price + "\t     " + Quantity + "\t\t " + GST + "%\t    " + Discount + "%\t\t";
+            display += S_No + "\t   " + Name + "\t    " + Model_No + "\t     " + Warenty_period + " years\t\t " + Price + "\t     " + Quantity + "\t\t " + GST + "%\t    " + Discount + "%\t\t";
             return display;
         }
     }
